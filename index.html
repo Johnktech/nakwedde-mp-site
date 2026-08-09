@@ -3,219 +3,48 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Harriet Nakwedde — Kayunga District Woman MP</title>
+<title>Harriet Nakwedde — Woman MP, Kayunga District</title>
+<meta name="description" content="Official site of Hon. Harriet Nakwedde, Woman Member of Parliament for Kayunga District — her story, her priorities, and her work in Parliament.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --ink:#151E2E;
-    --ink-soft:#5A6472;
-    --ink-faint:#8C95A3;
-    --paper:#FFFFFF;
-    --blue:#1E3A5F;
-    --blue-deep:#0B1B2E;
-    --red:#B23A2E;
-    --line:rgba(21,30,46,0.10);
-    --green:#1F4A3D;
-    --green-deep:#153630;
-    --gold:#B08D3F;
-  }
-  @media (prefers-reduced-motion: no-preference){
-    @keyframes heroFade{from{opacity:0; transform:translateY(16px);} to{opacity:1; transform:translateY(0);}}
-    @keyframes heroImgReveal{from{opacity:0; transform:scale(1.035);} to{opacity:1; transform:scale(1);}}
-  }
-  *{box-sizing:border-box;}
-  body{
-    margin:0;
-    background:var(--paper);
-    color:var(--ink);
-    font-family:'Public Sans', sans-serif;
-    font-size:17px;
-    line-height:1.7;
-    -webkit-font-smoothing:antialiased;
-  }
-  h1,h2,h3{
-    font-family:'Fraunces', serif;
-    font-weight:500;
-    margin:0;
-    letter-spacing:-0.01em;
-    line-height:1.1;
-    color:var(--blue-deep);
-  }
-  .fill{
-    background:rgba(178,58,46,0.07);
-    border:1px dashed rgba(178,58,46,0.4);
-    color:var(--red);
-    padding:0.1em 0.5em;
-    border-radius:3px;
-    font-size:0.92em;
-    font-style:italic;
-  }
-  .wrap{max-width:820px; margin:0 auto; padding:0 28px;}
-
-  /* nav */
-  nav{padding:20px 0; border-bottom:1px solid var(--line); position:sticky; top:0; background:rgba(255,255,255,0.95); backdrop-filter:blur(6px); z-index:10;}
-  nav .wrap{display:flex; justify-content:space-between; align-items:center; max-width:820px;}
-  .brand-block{display:flex; flex-direction:column;}
-  .brand{font-family:'Fraunces',serif; font-weight:500; font-size:1.05rem;}
-  .tagline{font-size:0.74rem; color:var(--ink-faint); margin-top:2px;}
-  .navlinks{display:flex; align-items:center; gap:26px;}
-  .navlinks a{font-size:0.86rem; font-weight:600; text-decoration:none; color:var(--ink-soft); transition:color .15s;}
-  .navlinks a:hover{color:var(--ink);}
-  .navlinks a.contact{
-    color:var(--ink); border-bottom:1.5px solid var(--red); padding-bottom:2px;
-  }
-  @media (max-width:560px){.navlinks a:not(.contact){display:none;}}
-
-  /* hero */
-  .hero{
-    padding:0; overflow:hidden; background:var(--paper);
-    display:flex; flex-direction:column; justify-content:center;
-    min-height:86vh;
-  }
-  .hero-inner{
-    max-width:1360px; margin:0 auto; width:100%;
-    padding:72px 28px 56px;
-    display:flex; align-items:center; gap:64px;
-  }
-  .hero-text{order:1; flex:1 1 48%; min-width:0; max-width:560px;}
-  .eyebrow{
-    font-size:0.76rem; letter-spacing:0.16em; text-transform:uppercase;
-    color:var(--green); font-weight:600; margin:0 0 24px;
-    animation:heroFade .7s ease both; animation-delay:.05s;
-  }
-  .hero h1{
-    font-size:clamp(1.7rem, 7.5vw, 3.2rem); white-space:nowrap; margin-bottom:26px; color:var(--ink);
-    animation:heroFade .8s ease both; animation-delay:.14s;
-  }
-  .hero .role{
-    font-size:1.05rem; color:var(--ink-soft); margin-bottom:22px; font-weight:600;
-    animation:heroFade .8s ease both; animation-delay:.22s;
-  }
-  .hero .statement{
-    font-size:1.05rem; line-height:1.65; color:var(--ink-soft); max-width:42ch; margin:0 0 36px;
-    animation:heroFade .8s ease both; animation-delay:.3s;
-  }
-  .hero-cta{
-    display:flex; gap:14px; flex-wrap:wrap;
-    animation:heroFade .8s ease both; animation-delay:.38s;
-  }
-  .hero-cta a{
-    display:inline-block; padding:15px 28px; font-size:0.86rem; font-weight:600;
-    letter-spacing:0.02em; text-decoration:none; border-radius:2px;
-    transition:background .2s ease, border-color .2s ease, color .2s ease, transform .2s ease;
-  }
-  .hero-cta .btn-primary{background:var(--green); color:#fff;}
-  .hero-cta .btn-primary:hover{background:var(--green-deep); transform:translateY(-1px);}
-  .hero-cta .btn-secondary{border:1px solid var(--ink); color:var(--ink); background:transparent;}
-  .hero-cta .btn-secondary:hover{border-color:var(--green); color:var(--green);}
-  .hero-photo{
-    order:2; position:relative; flex:1 1 52%; margin-left:auto;
-    width:100%; max-width:600px; aspect-ratio:4/5; overflow:hidden; border-radius:0;
-  }
-  .hero-photo img{
-    width:100%; height:100%; object-fit:cover; object-position:center 18%; display:block;
-    animation:heroImgReveal 1.1s ease both; animation-delay:.1s;
-  }
-  .hero-photo::before{
-    content:''; position:absolute; inset:0; pointer-events:none;
-    background:linear-gradient(90deg, var(--paper) 0%, rgba(255,255,255,0) 12%);
-  }
-  .hero-credentials{
-    border-top:1px solid var(--line); max-width:1360px; margin:0 auto; width:100%;
-    padding:22px 28px 0; display:flex; align-items:center; gap:20px; flex-wrap:wrap;
-  }
-  .hero-credentials span:not(.divider){
-    font-size:0.74rem; letter-spacing:0.06em; text-transform:uppercase;
-    color:var(--ink-soft); font-weight:600;
-  }
-  .hero-credentials .divider{width:4px; height:4px; border-radius:50%; background:var(--gold); flex:none;}
-  @media (max-width:900px){
-    .hero{min-height:0;}
-    .hero-inner{flex-direction:column; align-items:flex-start; gap:36px; padding:52px 24px 40px;}
-    .hero-text{max-width:none;}
-    .hero-photo{max-width:none; aspect-ratio:5/4; margin-left:0;}
-    .hero-photo::before{background:linear-gradient(180deg, var(--paper) 0%, rgba(255,255,255,0) 10%);}
-  }
-  @media (prefers-reduced-motion: reduce){
-    .eyebrow,.hero h1,.hero .role,.hero .statement,.hero-cta,.hero-photo img{animation:none;}
-  }
-
-  section{padding:56px 0;}
-  .rule{width:36px; height:2px; background:var(--red); margin-bottom:20px;}
-  h2{font-size:1.5rem; margin-bottom:22px;}
-
-  .bio p{margin:0 0 18px; color:var(--ink-soft); font-size:1.02rem;}
-  .bio p:last-child{margin-bottom:0;}
-
-  .side-photo{
-    float:right; width:220px; margin:4px 0 20px 28px; border-radius:4px; overflow:hidden;
-  }
-  .side-photo img{width:100%; display:block;}
-  @media (max-width:560px){.side-photo{float:none; width:100%; margin:0 0 24px;}}
-
-  .quote{
-    font-family:'Fraunces',serif; font-style:italic; font-size:1.3rem; line-height:1.5;
-    color:var(--blue-deep); border-left:3px solid var(--red); padding-left:22px; margin:32px 0;
-  }
-  .quote cite{display:block; margin-top:10px; font-style:normal; font-family:'Public Sans',sans-serif; font-size:0.82rem; color:var(--ink-faint);}
-
-  .facts{display:grid; grid-template-columns:1fr 1fr; gap:16px 24px; margin-top:36px; padding-top:24px; border-top:1px solid var(--line);}
-  .facts dt{font-size:0.72rem; letter-spacing:0.05em; text-transform:uppercase; color:var(--ink-faint);}
-  .facts dd{margin:4px 0 0; font-weight:600; font-size:0.96rem;}
-
-  .cards{display:flex; flex-direction:column; gap:20px;}
-  .card{border:1px solid var(--line); border-radius:5px; padding:26px 28px;}
-  .card h3{font-size:1.1rem; margin-bottom:10px;}
-  .card p{margin:0; color:var(--ink-soft); font-size:0.96rem;}
-
-  .contact-band{background:var(--blue-deep); color:var(--paper);}
-  .contact-band h2{color:var(--paper);}
-  .contact-band .rule{background:var(--red);}
-  .contact-band p{color:rgba(255,255,255,0.7); font-size:0.98rem; max-width:46ch; margin:0 0 26px;}
-  .contact-row{display:flex; gap:10px; flex-wrap:wrap;}
-  .contact-row a{
-    display:inline-block; padding:13px 20px; border-radius:4px; text-decoration:none;
-    font-size:0.88rem; font-weight:600;
-  }
-  .contact-row a.primary{background:var(--red); color:var(--paper);}
-  .contact-row a.ghost{border:1px solid rgba(255,255,255,0.3); color:var(--paper);}
-
-  footer{padding:32px 0; border-top:1px solid var(--line);}
-  footer .wrap{max-width:820px;}
-  footer p{font-size:0.78rem; color:var(--ink-faint); margin:0; line-height:1.6;}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,500;1,9..144,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
 </head>
 <body>
 
-<nav>
+<nav class="site-nav">
   <div class="wrap">
-    <div class="brand-block">
-      <div class="brand">Harriet Nakwedde</div>
-      <div class="tagline">Woman MP, Kayunga District</div>
-    </div>
-    <div class="navlinks">
-      <a href="#about">About</a>
-      <a href="#priorities">Priorities</a>
-      <a href="#contact" class="contact">Contact</a>
-    </div>
+    <a class="nav-brand" href="/">
+      <strong>Harriet Nakwedde</strong>
+      <span>Woman MP, Kayunga District</span>
+    </a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="/about/">Harriet</a></li>
+      <li><a href="/kayunga/">Kayunga</a></li>
+      <li><a href="/parliament/">In Parliament</a></li>
+      <li><a href="/priorities/">Priorities</a></li>
+      <li><a href="/news/">News</a></li>
+      <li><a href="/speeches/">Media</a></li>
+      <li><a href="/contact/" class="is-contact">Contact</a></li>
+    </ul>
   </div>
 </nav>
 
 <div class="hero">
   <div class="hero-inner">
-    <div class="hero-photo">
-      <img src="images/hero-portrait.jpg" alt="Harriet Nakwedde">
+    <div class="hero-photo" data-reveal="img">
+      <img src="/images/portrait-studio.jpg" alt="Harriet Nakwedde" width="1125" height="1126">
     </div>
     <div class="hero-text">
-      <p class="eyebrow">Leadership · Service · Kayunga</p>
-      <h1>Harriet Nakwedde</h1>
-      <div class="role">Woman Member of Parliament · Kayunga District</div>
-      <p class="statement">Representing Kayunga. Advancing accountable leadership, opportunity and stronger communities.</p>
-      <div class="hero-cta">
-        <a href="#priorities" class="btn-primary">Explore Her Work</a>
-        <a href="#about" class="btn-secondary">About Harriet</a>
+      <p class="eyebrow" data-reveal>Woman Member of Parliament · Kayunga District</p>
+      <h1 data-reveal>Harriet Nakwedde</h1>
+      <p class="statement" data-reveal>Twenty years. Four campaigns. One unwavering commitment to Kayunga.</p>
+      <div class="hero-cta" data-reveal>
+        <a href="/about/" class="btn btn-primary">Explore her journey →</a>
+        <a href="/parliament/" class="btn btn-secondary">Latest from Parliament →</a>
       </div>
     </div>
   </div>
@@ -228,75 +57,177 @@
   </div>
 </div>
 
-<section class="bio" id="about">
+<section class="section">
   <div class="wrap">
-    <div class="rule"></div>
-    <h2>About</h2>
-    <div class="side-photo"><img src="images/about-portrait.jpg" alt="Harriet Nakwedde"></div>
-    <p>Harriet Nakwedde was born in Busaana Sub-county, Kayunga District. She trained and worked as a teacher, holding a Bachelor's degree in Education from Makerere University and a Master's in Human Resource Management from Makerere University Business School.</p>
-    <p>Her years in the classroom shaped the issues she has carried into public life ever since — school retention, particularly for girls, and the everyday obstacles rural constituents face in accessing basic services. The move from teaching into human resource management gave her a second lens on institutions: how they are run, who they serve, and where they fall short. Both threads — education and institutional accountability — recur throughout her political career.</p>
-    <p>Kayunga has been the constant backdrop to that career. Long before she held office, she was a visible presence in local political life, building relationships across the district's sub-counties and establishing herself as a persistent, if not always successful, contender for elected office.</p>
-    <p>She first contested the Kayunga Woman MP seat in 2006 on the FDC ticket, and again in 2011 — both unsuccessful. She went on to serve ten years as Kayunga District FDC Chairperson and five years as the party's Deputy Secretary for Education nationally, while also serving as District Woman Councillor for Kayunga Town Council and Sub-county, and Secretary for Education on the District Executive Committee, between 2016 and 2021.</p>
-    <p>She contested for Woman MP again in 2021, and separately ran for Kayunga LC V Chairperson in a late-2021 by-election, losing both races. Each defeat was followed by a return to organizing rather than a retreat from politics — a pattern that came to define her reputation locally: someone who kept standing, cycle after cycle, regardless of the outcome. In January 2026 — twenty years after her first attempt — she won the Kayunga Woman MP seat. A petition against her win was filed and dismissed by the Kayunga Chief Magistrate's Court later that month, confirming her election.</p>
-    <p>She was appointed Deputy Chief Opposition Whip and Shadow Minister for the Presidency in May 2026, placing her inside the opposition's parliamentary leadership within months of taking her seat — a fast rise that reflects both the two decades of groundwork behind it and the confidence of her party colleagues in the 12th Parliament.</p>
-    <p>Outside the chamber, she is the founder of the Forum for Emancipation to Empowerment Drive (FEED), an organization built around the same causes she has championed publicly for years: girls' education, women's economic independence, and grassroots civic participation. She is married to Robert Nangatsa and has three children.</p>
+    <div class="teaser" data-reveal>
+      <div class="teaser-text">
+        <p class="eyebrow">Her Story</p>
+        <h2>From the classroom to Parliament.</h2>
+        <p>Harriet Nakwedde trained and worked as a teacher before entering public life. What followed was two decades of standing for office in Kayunga — through defeat, through renewed organizing, and eventually, in January 2026, through election as the district's Woman Member of Parliament.</p>
+        <a href="/about/" class="link-arrow">Read Harriet's story →</a>
+      </div>
+      <div class="teaser-media">
+        <div class="frame">
+          <img src="/images/parliament-committee-2.jpg" alt="Harriet Nakwedde in a parliamentary session" width="1280" height="718" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <div class="quote">
+<section class="section section--paper">
+  <div class="wrap-narrow">
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">A journey built on persistence</p>
+      <h2>Twenty years. Four campaigns.</h2>
+    </div>
+    <div class="timeline" data-reveal>
+      <div class="timeline-item">
+        <div class="timeline-year">2006</div>
+        <div class="timeline-body">
+          <h3>First contested the Kayunga Woman MP seat</h3>
+          <p>Ran on the FDC ticket. Unsuccessful.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2021</div>
+        <div class="timeline-body">
+          <h3>Two campaigns, two defeats</h3>
+          <p>Contested Woman MP again and separately ran for Kayunga LC V Chairperson in a by-election, losing both. She was physically assaulted during the by-election campaign and pursued the matter through the courts.</p>
+        </div>
+      </div>
+      <div class="timeline-item timeline-item--current">
+        <div class="timeline-year">Jan 2026</div>
+        <div class="timeline-body">
+          <h3>Elected Woman MP, Kayunga District</h3>
+          <p>Twenty years after her first attempt. A petition against her win was filed and dismissed by the Kayunga Chief Magistrate's Court that same month, confirming her election.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">May 2026</div>
+        <div class="timeline-body">
+          <h3>Appointed to opposition leadership</h3>
+          <p>Named Deputy Chief Opposition Whip and Shadow Minister for the Presidency.</p>
+        </div>
+      </div>
+    </div>
+    <p style="margin-top:32px;"><a href="/about/" class="link-arrow">See the full journey →</a></p>
+  </div>
+</section>
+
+<figure data-reveal="img" style="margin:0;">
+  <img src="/images/parliament-group-officials.jpg" alt="Harriet Nakwedde with fellow officials" loading="lazy" style="width:100%; aspect-ratio:16/7; object-fit:cover; object-position:center 25%;">
+</figure>
+
+<section class="section">
+  <div class="wrap">
+    <div class="teaser is-reverse" data-reveal>
+      <div class="teaser-text">
+        <p class="eyebrow">Kayunga</p>
+        <h2>The place she represents.</h2>
+        <p>She was born in Busaana Sub-county, Kayunga District, and it has been the constant backdrop to her career ever since — from her years as a teacher to two decades of building relationships across the district's sub-counties.</p>
+        <a href="/kayunga/" class="link-arrow">More on Kayunga →</a>
+      </div>
+      <div class="teaser-media">
+        <div class="empty-state" style="aspect-ratio:4/3; display:flex; flex-direction:column; justify-content:center;">
+          <p class="eyebrow" style="margin-bottom:10px;">District photography</p>
+          <p style="margin:0; font-size:0.92rem;">In development — genuine Kayunga documentary photography will be added here.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--surface">
+  <div class="wrap-narrow">
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">Priorities</p>
+      <h2>What she stands for.</h2>
+    </div>
+    <div class="priority-list" data-reveal>
+      <div class="priority-row">
+        <div class="priority-num">01</div>
+        <div>
+          <h3>Rule of law &amp; equal rights</h3>
+          <p>A position she's held publicly since 2006 — respect for the rule of law, democracy, and people's rights without discrimination.</p>
+        </div>
+      </div>
+      <div class="priority-row">
+        <div class="priority-num">02</div>
+        <div>
+          <h3>Girls' education</h3>
+          <p>Keeping girls in school — including a campaign, described in a 2022 interview, to take pregnant girls back to school in Kayunga.</p>
+        </div>
+      </div>
+      <div class="priority-row">
+        <div class="priority-num">03</div>
+        <div>
+          <h3>Roads &amp; infrastructure</h3>
+          <p>In 2023 she helped organize a Kayunga protest over an unfulfilled presidential pledge to tarmac a district road.</p>
+        </div>
+      </div>
+      <div class="priority-row">
+        <div class="priority-num">04</div>
+        <div>
+          <h3>Electoral integrity</h3>
+          <p>Assaulted during the contested 2021 LC V by-election, she pursued the matter through the courts rather than dropping it.</p>
+        </div>
+      </div>
+    </div>
+    <p style="margin-top:32px;"><a href="/priorities/" class="link-arrow">All priorities in full →</a></p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="teaser" data-reveal>
+      <div class="teaser-text">
+        <p class="eyebrow">In Parliament</p>
+        <h2>Kayunga's voice in the House.</h2>
+        <p>Now serving as Deputy Chief Opposition Whip and Shadow Minister for the Presidency in the 12th Parliament — the parliamentary record will be published here as it develops.</p>
+        <a href="/parliament/" class="link-arrow">See her work in Parliament →</a>
+      </div>
+      <div class="teaser-media">
+        <div class="frame">
+          <img src="/images/parliament-committee-1.jpg" alt="Harriet Nakwedde speaking in a committee session" width="1280" height="1107" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--paper">
+  <div class="wrap-narrow" data-reveal>
+    <blockquote class="pull-quote">
       "My political struggles revolve around issues of respect for the rule of law, democracy, respect of people's rights without discrimination."
       <cite>— Harriet Nakwedde, Daily Monitor, August 2024</cite>
-    </div>
-
-    <dl class="facts">
-      <div><dt>Constituency</dt><dd>Kayunga District</dd></div>
-      <div><dt>Party</dt><dd>National Unity Platform</dd></div>
-      <div><dt>Assumed office</dt><dd>15 January 2026</dd></div>
-      <div><dt>Education</dt><dd>Makerere University (BA, MA)</dd></div>
-    </dl>
+    </blockquote>
   </div>
 </section>
 
-<section class="priorities" id="priorities">
+<section class="section section--navy">
   <div class="wrap">
-    <div class="rule"></div>
-    <h2>Priorities</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Rule of law &amp; equal rights</h3>
-        <p>A position she's held publicly since 2006 — respect for the rule of law, democracy, and people's rights without discrimination. It is the thread running through nearly every other stance she has taken, from her handling of the 2026 election petition to her willingness to challenge alleged abuses through formal, institutional channels rather than outside them.</p>
-      </div>
-      <div class="card">
-        <h3>Education — keeping girls in school</h3>
-        <p>In a 2022 interview, she described running a campaign to take pregnant girls back to school in Kayunga — a direct extension of her own career as a teacher. The initiative reflects a broader conviction that dropout, once it happens, is rarely permanent if there is someone actively working to reverse it, and that girls' education specifically requires deliberate, targeted intervention rather than general policy.</p>
-      </div>
-      <div class="card">
-        <h3>Roads &amp; infrastructure</h3>
-        <p>In 2023 she was among organizers of a Kayunga protest over an unfulfilled presidential pledge to tarmac a district road — demonstrators carried signs reading "No tarmac road, no votes." The protest was as much about accountability for broken promises as it was about the road itself, and infrastructure delivery remains a standing measure she applies to sitting officials, including now to her own record in office.</p>
-      </div>
-      <div class="card">
-        <h3>Electoral integrity</h3>
-        <p>She has described being physically assaulted during the contested 2021 LC V by-election campaign. She pursued the matter through the courts rather than dropping it — consistent with her public stance on rule of law. That same instinct shaped her response to the 2026 petition against her own election: she let the Chief Magistrate's Court resolve it rather than treating the challenge as illegitimate on its face.</p>
-      </div>
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">Get in touch</p>
+      <h2>Contact the office</h2>
+      <p>For constituents, journalists, and partners — reach the Kayunga Woman MP's office.</p>
     </div>
+    <a href="/contact/" class="btn btn-primary" data-reveal>Contact the office →</a>
   </div>
 </section>
 
-<section class="contact-band" id="contact">
-  <div class="wrap">
-    <div class="rule"></div>
-    <h2>Get in touch</h2>
-    <p>For constituents, journalists, and partners — reach the Kayunga Woman MP's office directly. Constituency issues, from local infrastructure concerns to matters affecting schools and health services, are logged and followed up individually. Press inquiries relating to her parliamentary role or FEED are welcome through the same channel.</p>
-    <div class="contact-row">
-      <a href="#" class="primary">Contact the office</a>
-      <a href="#" class="ghost">Report a constituency issue</a>
-    </div>
-  </div>
-</section>
-
-<footer>
+<footer class="site-footer">
   <div class="wrap">
     <p>Official page of Hon. Harriet Nakwedde, Woman MP for Kayunga District. Biographical facts sourced to public records and reporting. DRAFT — built for review, not yet published.</p>
+    <ul class="footer-links">
+      <li><a href="/about/">Her Story</a></li>
+      <li><a href="/priorities/">Priorities</a></li>
+      <li><a href="/parliament/">Parliament</a></li>
+      <li><a href="/contact/">Contact</a></li>
+    </ul>
   </div>
 </footer>
 
+<script src="/reveal.js" defer></script>
 </body>
 </html>
